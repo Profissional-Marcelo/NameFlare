@@ -1,24 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
-
-:root {
-    /*CORES: */
-
-    --cor-principal: #1d0045;
-    --borda-roxa: #4900D2;
-    --cor-roxo-claro: #280558;
-    --cor-letra-roxa: #150B54;
-    --cor-letras: #FDFEFF;
-    --cor-azul: #00F3FF;
-    --borda-azul: #00F4F8;
-    --letra-secundaria: #9483B6;
-    --cor-verde: #B0F447;
-}
-
-
-
 html, body {
-    font-family: 'Open Sans', sans-serif;
-    background-color: var(--cor-principal);
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 a, .btn-link {
