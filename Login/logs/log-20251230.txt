@@ -1,0 +1,67 @@
+2025-12-30 00:06:52 [INF] User profile is available. Using 'C:\Users\profi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-30 00:06:52 [INF] Now listening on: http://localhost:5000
+2025-12-30 00:06:52 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-12-30 00:06:52 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-30 00:06:52 [INF] Hosting environment: Development
+2025-12-30 00:06:52 [INF] Content root path: C:\Users\profi\OneDrive\Documentos\NameFlare\Login
+2025-12-30 00:06:54 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-30 00:06:54 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_vs/browserLink - null null
+2025-12-30 00:06:54 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - 200 16495 application/javascript; charset=utf-8 40.841ms
+2025-12-30 00:06:54 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_vs/browserLink - 200 null text/javascript; charset=UTF-8 158.6897ms
+2025-12-30 00:06:54 [INF] Request starting HTTP/1.1 GET http://localhost:5000/openapi/v1.json - null null
+2025-12-30 00:06:54 [WRN] Failed to determine the https port for redirect.
+2025-12-30 00:06:54 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-12-30 00:06:54 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-12-30 00:06:54 [INF] Request finished HTTP/1.1 GET http://localhost:5000/openapi/v1.json - 200 null application/json;charset=utf-8 143.7906ms
+2025-12-30 00:07:28 [INF] User profile is available. Using 'C:\Users\profi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-30 00:07:28 [INF] Now listening on: http://localhost:5000
+2025-12-30 00:07:28 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-12-30 00:07:28 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-30 00:07:28 [INF] Hosting environment: Development
+2025-12-30 00:07:28 [INF] Content root path: C:\Users\profi\OneDrive\Documentos\NameFlare\Login
+2025-12-30 00:07:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_vs/browserLink - null null
+2025-12-30 00:07:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-30 00:07:30 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - 200 16495 application/javascript; charset=utf-8 48.1173ms
+2025-12-30 00:07:30 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_vs/browserLink - 200 null text/javascript; charset=UTF-8 150.865ms
+2025-12-30 00:07:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/openapi/v1.json - null null
+2025-12-30 00:07:30 [WRN] Failed to determine the https port for redirect.
+2025-12-30 00:07:30 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-12-30 00:07:30 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-12-30 00:07:30 [INF] Request finished HTTP/1.1 GET http://localhost:5000/openapi/v1.json - 200 null application/json;charset=utf-8 115.833ms
+2025-12-30 00:07:39 [INF] Request starting HTTP/1.1 GET http://localhost:5000/openapi/v1.json - null null
+2025-12-30 00:07:39 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-12-30 00:07:39 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-12-30 00:07:39 [INF] Request finished HTTP/1.1 GET http://localhost:5000/openapi/v1.json - 200 null application/json;charset=utf-8 75.0715ms
+2025-12-30 00:07:39 [INF] Request starting HTTP/1.1 GET http://localhost:5000/favicon.ico - null null
+2025-12-30 00:07:39 [INF] Request finished HTTP/1.1 GET http://localhost:5000/favicon.ico - 404 0 null 6.2152ms
+2025-12-30 00:07:39 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/favicon.ico, Response status code: 404
+2025-12-30 00:10:58 [INF] User profile is available. Using 'C:\Users\profi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-30 00:10:58 [INF] Now listening on: http://localhost:5000
+2025-12-30 00:10:58 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-12-30 00:10:58 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-30 00:10:58 [INF] Hosting environment: Development
+2025-12-30 00:10:58 [INF] Content root path: C:\Users\profi\OneDrive\Documentos\NameFlare\Login
+2025-12-30 00:10:59 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-30 00:10:59 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_vs/browserLink - null null
+2025-12-30 00:10:59 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - 200 16495 application/javascript; charset=utf-8 39.1147ms
+2025-12-30 00:10:59 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_vs/browserLink - 200 null text/javascript; charset=UTF-8 122.6594ms
+2025-12-30 00:11:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/openapi/v1.json - null null
+2025-12-30 00:11:00 [WRN] Failed to determine the https port for redirect.
+2025-12-30 00:11:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-12-30 00:11:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-12-30 00:11:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/openapi/v1.json - 200 null application/json;charset=utf-8 126.9627ms
+2025-12-30 00:18:46 [INF] User profile is available. Using 'C:\Users\profi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-30 00:18:46 [INF] Now listening on: http://localhost:5000
+2025-12-30 00:18:46 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-12-30 00:18:46 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-30 00:18:46 [INF] Hosting environment: Development
+2025-12-30 00:18:46 [INF] Content root path: C:\Users\profi\OneDrive\Documentos\NameFlare\Login
+2025-12-30 00:18:48 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_vs/browserLink - null null
+2025-12-30 00:18:48 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-30 00:18:49 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - 200 16495 application/javascript; charset=utf-8 34.029ms
+2025-12-30 00:18:49 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_vs/browserLink - 200 null text/javascript; charset=UTF-8 115.9643ms
+2025-12-30 00:18:49 [INF] Request starting HTTP/1.1 GET http://localhost:5000/openapi/v1.json - null null
+2025-12-30 00:18:49 [WRN] Failed to determine the https port for redirect.
+2025-12-30 00:18:49 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-12-30 00:18:49 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-12-30 00:18:49 [INF] Request finished HTTP/1.1 GET http://localhost:5000/openapi/v1.json - 200 null application/json;charset=utf-8 185.7561ms

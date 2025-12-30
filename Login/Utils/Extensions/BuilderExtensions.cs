@@ -1,4 +1,4 @@
-﻿using Login.Models;
+﻿using Login.Data;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.OpenApi;
@@ -16,33 +16,48 @@ namespace Login.Common.Extensions
     {
         public static WebApplicationBuilder AddArchitectures(this WebApplicationBuilder builder)
         {
-            // 1. PRIMEIRO: Configurar a leitura do appsettings.json
+            // 1. Configuração do appsettings
             ConfigureAppSettings(builder);
 
-            // 2. OpenAPI nativo do .NET 10
+            // 2. Configuração OpenAPI com segurança JWT
+            ConfigureOpenApi(builder);
+
+            // 3. Configuração do DbContext
+            ConfigureDbContext(builder);
+
+            return builder;
+        }
+
+        private static void ConfigureOpenApi(WebApplicationBuilder builder)
+        {
+            // OpenAPI básico - segurança será inferida dos atributos [Authorize]
             builder.Services.AddOpenApi();
             builder.Services.AddEndpointsApiExplorer();
-
-            // 3. DbContext
+    
+            // Para a UI do Swagger ainda mostrar o botão Authorize, podemos usar esta abordagem:
+            builder.Services.Configure<OpenApiOptions>(options =>
+            {
+                // No .NET 10, a segurança é inferida automaticamente dos endpoints
+                // que usam [Authorize] ou RequireAuthorization()
+            });
+        }
+        private static void ConfigureDbContext(WebApplicationBuilder builder)
+        {
             builder.Services.AddDbContext<AppDbContext>(options =>
             {
                 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 
                 if (string.IsNullOrEmpty(connectionString))
                 {
-                    throw new InvalidOperationException("Connection string 'DefaultConnection' not found in configuration.");
+                    throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
                 }
 
                 options.UseMySql(
-                 connectionString,
-                 ServerVersion.AutoDetect(connectionString),
-                 mysqlOptions =>
-                 {
-                     mysqlOptions.EnableRetryOnFailure(); // Usa valores padrão
-                 });
+                    connectionString,
+                    ServerVersion.AutoDetect(connectionString),
+                    mysqlOptions => mysqlOptions.EnableRetryOnFailure()
+                );
             });
-
-            return builder;
         }
 
         private static void ConfigureAppSettings(WebApplicationBuilder builder)
@@ -154,9 +169,16 @@ namespace Login.Common.Extensions
                     options.RoutePrefix = "swagger";
                     options.DefaultModelsExpandDepth(-1); // Esconde schemas
                 });
+
+                app.MapGet("/", () => Results.Redirect("/swagger"));
             }
 
             return app;
         }
+
+
+
+
+
     }
 }

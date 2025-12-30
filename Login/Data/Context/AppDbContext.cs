@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace Login.Models
+namespace Login.Data
 {
     public partial class AppDbContext : DbContext
     {
