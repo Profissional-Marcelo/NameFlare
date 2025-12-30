@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="Login/Login.csproj" />
+  <Project Path="NameFlare-App/NameFlare-App.csproj" />
+</Solution>

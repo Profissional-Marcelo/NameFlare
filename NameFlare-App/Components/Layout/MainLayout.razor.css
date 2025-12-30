@@ -1,0 +1,33 @@
+#blazor-error-ui {
+    color-scheme: light only;
+    background: lightyellow;
+    bottom: 0;
+    box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    display: none;
+    left: 0;
+    padding: 0.6rem 1.25rem 0.7rem 1.25rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+#blazor-error-ui .dismiss {
+    cursor: pointer;
+    position: absolute;
+    right: 0.75rem;
+    top: 0.5rem;
+}
+
+section.page {
+    width: 100%;
+    height: 100%;
+    background-color: #0b1a3d; /* Cor de fundo base (azul escuro) */
+    background-image: radial-gradient(at 10% 10%, #4D2271 0%, transparent 60%), /* Brilho Roxo no topo esquerdo */
+    radial-gradient(at 10% 10%, #4D2271 0%, transparent 60%), /* Brilho Roxo no topo esquerdo */
+    radial-gradient(at 90% 90%, #256684 0%, transparent 60%), /* Brilho Ciano no canto inferior direito */
+    radial-gradient(at 90% 90%, #256684 0%, transparent 60%), /* Brilho Ciano no canto inferior direito */
+    radial-gradient(at 50% 50%, #0E1950 0%, transparent 80%); /* Preenchimento azul central */
+    radial-gradient(at 50% 50%, #0E1950 0%, transparent 80%);
+    background-attachment: fixed;
+}
