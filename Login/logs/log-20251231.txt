@@ -1,0 +1,193 @@
+2025-12-31 00:11:55 [INF] User profile is available. Using 'C:\Users\profi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-31 00:11:55 [INF] Now listening on: http://localhost:5000
+2025-12-31 00:11:55 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-12-31 00:11:55 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-31 00:11:55 [INF] Hosting environment: Development
+2025-12-31 00:11:55 [INF] Content root path: C:\Users\profi\OneDrive\Documentos\NameFlare\Login
+2025-12-31 00:11:56 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_vs/browserLink - null null
+2025-12-31 00:11:56 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-31 00:11:56 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - 200 16495 application/javascript; charset=utf-8 40.3793ms
+2025-12-31 00:11:56 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_vs/browserLink - 200 null text/javascript; charset=UTF-8 128.6235ms
+2025-12-31 00:11:56 [INF] Request starting HTTP/1.1 GET http://localhost:5000/openapi/v1.json - null null
+2025-12-31 00:11:56 [WRN] Failed to determine the https port for redirect.
+2025-12-31 00:11:56 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-12-31 00:11:56 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-12-31 00:11:56 [INF] Request finished HTTP/1.1 GET http://localhost:5000/openapi/v1.json - 200 null application/json;charset=utf-8 107.9865ms
+2025-12-31 00:12:47 [INF] Request starting HTTP/1.1 POST http://localhost:5000/users - application/json 152
+2025-12-31 00:12:47 [INF] Executing endpoint 'HTTP: POST /users => Handler'
+2025-12-31 00:12:47 [INF] Executed endpoint 'HTTP: POST /users => Handler'
+2025-12-31 00:12:47 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.AspNetCore.Http.BadHttpRequestException: Failed to read parameter "CreateUserViewModel model" from the request body as JSON.
+ ---> System.Text.Json.JsonException: The JSON value could not be converted to Login.Models.ViewModels.CreateUserViewModel. Path: $ | LineNumber: 0 | BytePositionInLine: 7.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.ContinueDeserialize[TReadBufferState,TStream](TReadBufferState& bufferState, JsonReaderState& jsonReaderState, ReadStack& readStack, T& value)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsync[TReadBufferState,TStream](TStream utf8Json, TReadBufferState bufferState, CancellationToken cancellationToken)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsObjectAsync(PipeReader utf8Json, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync(HttpRequest request, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync(HttpRequest request, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<HandleRequestBodyAndCompileRequestDelegateForJson>g__TryReadBodyAsync|102_0(HttpContext httpContext, Type bodyType, String parameterTypeName, String parameterName, Boolean allowEmptyRequestBody, Boolean throwOnBadRequest, JsonTypeInfo jsonTypeInfo)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.Log.InvalidJsonRequestBody(HttpContext httpContext, String parameterTypeName, String parameterName, Exception exception, Boolean shouldThrow)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<HandleRequestBodyAndCompileRequestDelegateForJson>g__TryReadBodyAsync|102_0(HttpContext httpContext, Type bodyType, String parameterTypeName, String parameterName, Boolean allowEmptyRequestBody, Boolean throwOnBadRequest, JsonTypeInfo jsonTypeInfo)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-12-31 00:12:47 [INF] Request finished HTTP/1.1 POST http://localhost:5000/users - 400 null text/plain; charset=utf-8 61.9756ms
+2025-12-31 00:13:46 [INF] Request starting HTTP/1.1 POST http://localhost:5000/users - application/json 157
+2025-12-31 00:13:46 [INF] Executing endpoint 'HTTP: POST /users => Handler'
+2025-12-31 00:20:23 [INF] User profile is available. Using 'C:\Users\profi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-31 00:20:23 [INF] Now listening on: http://localhost:5000
+2025-12-31 00:20:23 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-12-31 00:20:23 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-31 00:20:23 [INF] Hosting environment: Development
+2025-12-31 00:20:23 [INF] Content root path: C:\Users\profi\OneDrive\Documentos\NameFlare\Login
+2025-12-31 00:20:24 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_vs/browserLink - null null
+2025-12-31 00:20:24 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-31 00:20:24 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - 200 16495 application/javascript; charset=utf-8 31.4353ms
+2025-12-31 00:20:24 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_vs/browserLink - 200 null text/javascript; charset=UTF-8 192.5741ms
+2025-12-31 00:20:24 [INF] Request starting HTTP/1.1 GET http://localhost:5000/openapi/v1.json - null null
+2025-12-31 00:20:24 [WRN] Failed to determine the https port for redirect.
+2025-12-31 00:20:24 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-12-31 00:20:25 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-12-31 00:20:25 [INF] Request finished HTTP/1.1 GET http://localhost:5000/openapi/v1.json - 200 null application/json;charset=utf-8 121.7733ms
+2025-12-31 00:20:42 [INF] Request starting HTTP/1.1 POST http://localhost:5000/users - application/json 157
+2025-12-31 00:20:42 [INF] Executing endpoint 'HTTP: POST /users => Handler'
+2025-12-31 00:20:42 [INF] Criando usuário: joao.silva@email.com
+2025-12-31 00:20:44 [INF] Executed DbCommand (67ms) [Parameters=[@__model_Email_0='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM `usuarios` AS `u`
+    WHERE `u`.`ativo` AND (`u`.`email` = @__model_Email_0))
+2025-12-31 00:20:44 [INF] Executed DbCommand (34ms) [Parameters=[@p0='?' (DbType = Boolean), @p1='?' (DbType = Int32), @p2='?' (Size = 100), @p3='?' (DbType = Int32), @p4='?' (DbType = DateTime), @p5='?' (DbType = DateTime), @p6='?' (DbType = DateTime), @p7='?' (Size = 255), @p8='?' (Size = 50), @p9='?' (Size = 10), @p10='?' (Size = 255), @p11='?' (Size = 100), @p12='?' (Size = 50), @p13='?' (DbType = DateTime), @p14='?' (Size = 255), @p15='?' (Size = 45), @p16='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `usuarios` (`aceitou_termos`, `atualizado_por`, `chave_dois_fatores`, `criado_por`, `data_aceitacao_termos`, `data_banimento`, `data_criacao`, `email`, `fuso_horario`, `linguagem_preferida`, `motivo_inativacao`, `nome`, `salt`, `senha_expira_em`, `senha_hash`, `ultimo_ip`, `ultimo_login`)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16);
+SELECT `id`, `ativo`, `data_ultima_atualizacao`, `data_ultima_senha_alterada`, `dois_fatores_habilitado`, `email_verificado`, `tipo_usuario`, `total_logins`
+FROM `usuarios`
+WHERE ROW_COUNT() = 1 AND `id` = LAST_INSERT_ID();
+2025-12-31 00:20:44 [ERR] An exception occurred in the database while saving changes for context type 'Login.Data.Context.AppDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> System.ArgumentException: Requested value 'comum' was not found.
+   at System.Enum.TryParseByName[TStorage](RuntimeType enumType, ReadOnlySpan`1 value, Boolean ignoreCase, Boolean throwOnFailure, TStorage& result)
+   at System.Enum.TryParseByValueOrName[TUnderlying,TStorage](RuntimeType enumType, ReadOnlySpan`1 value, Boolean ignoreCase, Boolean throwOnFailure, TUnderlying& result)
+   at System.Enum.TryParse(Type enumType, ReadOnlySpan`1 value, Boolean ignoreCase, Boolean throwOnFailure, Object& result)
+   at lambda_method275(Closure, DbDataReader, Int32)
+   at Microsoft.EntityFrameworkCore.RelationalPropertyExtensions.GetReaderFieldValue(IProperty property, RelationalDataReader relationalReader, Int32 ordinal, Boolean detailedErrorsEnabled)
+   at Pomelo.EntityFrameworkCore.MySql.Update.Internal.MySqlModificationCommand.PropagateResults(RelationalDataReader relationalReader)
+   at Pomelo.EntityFrameworkCore.MySql.Update.Internal.MySqlModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> System.ArgumentException: Requested value 'comum' was not found.
+   at System.Enum.TryParseByName[TStorage](RuntimeType enumType, ReadOnlySpan`1 value, Boolean ignoreCase, Boolean throwOnFailure, TStorage& result)
+   at System.Enum.TryParseByValueOrName[TUnderlying,TStorage](RuntimeType enumType, ReadOnlySpan`1 value, Boolean ignoreCase, Boolean throwOnFailure, TUnderlying& result)
+   at System.Enum.TryParse(Type enumType, ReadOnlySpan`1 value, Boolean ignoreCase, Boolean throwOnFailure, Object& result)
+   at lambda_method275(Closure, DbDataReader, Int32)
+   at Microsoft.EntityFrameworkCore.RelationalPropertyExtensions.GetReaderFieldValue(IProperty property, RelationalDataReader relationalReader, Int32 ordinal, Boolean detailedErrorsEnabled)
+   at Pomelo.EntityFrameworkCore.MySql.Update.Internal.MySqlModificationCommand.PropagateResults(RelationalDataReader relationalReader)
+   at Pomelo.EntityFrameworkCore.MySql.Update.Internal.MySqlModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2025-12-31 00:20:44 [ERR] Erro ao salvar usuário
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> System.ArgumentException: Requested value 'comum' was not found.
+   at System.Enum.TryParseByName[TStorage](RuntimeType enumType, ReadOnlySpan`1 value, Boolean ignoreCase, Boolean throwOnFailure, TStorage& result)
+   at System.Enum.TryParseByValueOrName[TUnderlying,TStorage](RuntimeType enumType, ReadOnlySpan`1 value, Boolean ignoreCase, Boolean throwOnFailure, TUnderlying& result)
+   at System.Enum.TryParse(Type enumType, ReadOnlySpan`1 value, Boolean ignoreCase, Boolean throwOnFailure, Object& result)
+   at lambda_method275(Closure, DbDataReader, Int32)
+   at Microsoft.EntityFrameworkCore.RelationalPropertyExtensions.GetReaderFieldValue(IProperty property, RelationalDataReader relationalReader, Int32 ordinal, Boolean detailedErrorsEnabled)
+   at Pomelo.EntityFrameworkCore.MySql.Update.Internal.MySqlModificationCommand.PropagateResults(RelationalDataReader relationalReader)
+   at Pomelo.EntityFrameworkCore.MySql.Update.Internal.MySqlModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Login.Endpoints.User.CreateUserEndpoint.Handler(AppDbContext context, CreateUserViewModel model, ILogger`1 logger) in C:\Users\profi\OneDrive\Documentos\NameFlare\Login\Endpoints\User\CreateUserEndpoint.cs:line 56
+2025-12-31 00:20:44 [INF] Setting HTTP status code 500.
+2025-12-31 00:20:44 [INF] Writing value of type 'ProblemDetails' as Json.
+2025-12-31 00:20:44 [INF] Executed endpoint 'HTTP: POST /users => Handler'
+2025-12-31 00:20:44 [INF] Request finished HTTP/1.1 POST http://localhost:5000/users - 500 null application/problem+json 2076.9821ms
+2025-12-31 00:24:08 [INF] User profile is available. Using 'C:\Users\profi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-31 00:24:09 [INF] Now listening on: http://localhost:5000
+2025-12-31 00:24:09 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-12-31 00:24:09 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-31 00:24:09 [INF] Hosting environment: Development
+2025-12-31 00:24:09 [INF] Content root path: C:\Users\profi\OneDrive\Documentos\NameFlare\Login
+2025-12-31 00:24:09 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-31 00:24:09 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_vs/browserLink - null null
+2025-12-31 00:24:09 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - 200 16495 application/javascript; charset=utf-8 75.5775ms
+2025-12-31 00:24:09 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_vs/browserLink - 200 null text/javascript; charset=UTF-8 148.9909ms
+2025-12-31 00:24:09 [INF] Request starting HTTP/1.1 GET http://localhost:5000/openapi/v1.json - null null
+2025-12-31 00:24:09 [WRN] Failed to determine the https port for redirect.
+2025-12-31 00:24:09 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-12-31 00:24:10 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-12-31 00:24:10 [INF] Request finished HTTP/1.1 GET http://localhost:5000/openapi/v1.json - 200 null application/json;charset=utf-8 129.8244ms
+2025-12-31 00:24:26 [INF] Request starting HTTP/1.1 POST http://localhost:5000/users - application/json 157
+2025-12-31 00:24:26 [INF] Executing endpoint 'HTTP: POST /users => Handler'
+2025-12-31 00:24:26 [INF] Criando usuário: joao.silva@email.com
+2025-12-31 00:24:28 [INF] Executed DbCommand (66ms) [Parameters=[@__model_Email_0='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM `usuarios` AS `u`
+    WHERE `u`.`ativo` AND (`u`.`email` = @__model_Email_0))
+2025-12-31 00:24:28 [INF] Executed DbCommand (27ms) [Parameters=[@p0='?' (DbType = Boolean), @p1='?' (DbType = Int32), @p2='?' (Size = 100), @p3='?' (DbType = Int32), @p4='?' (DbType = DateTime), @p5='?' (DbType = DateTime), @p6='?' (DbType = DateTime), @p7='?' (Size = 255), @p8='?' (Size = 50), @p9='?' (Size = 10), @p10='?' (Size = 255), @p11='?' (Size = 100), @p12='?' (Size = 50), @p13='?' (DbType = DateTime), @p14='?' (Size = 255), @p15='?' (Size = 45), @p16='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `usuarios` (`aceitou_termos`, `atualizado_por`, `chave_dois_fatores`, `criado_por`, `data_aceitacao_termos`, `data_banimento`, `data_criacao`, `email`, `fuso_horario`, `linguagem_preferida`, `motivo_inativacao`, `nome`, `salt`, `senha_expira_em`, `senha_hash`, `ultimo_ip`, `ultimo_login`)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16);
+SELECT `id`, `ativo`, `data_ultima_atualizacao`, `data_ultima_senha_alterada`, `dois_fatores_habilitado`, `email_verificado`, `tipo_usuario`, `total_logins`
+FROM `usuarios`
+WHERE ROW_COUNT() = 1 AND `id` = LAST_INSERT_ID();
+2025-12-31 00:24:28 [INF] Usuário criado com ID: 2
+2025-12-31 00:24:28 [INF] Setting HTTP status code 201.
+2025-12-31 00:24:28 [INF] Writing value of type 'NFUser' as Json.
+2025-12-31 00:24:28 [INF] Executed endpoint 'HTTP: POST /users => Handler'
+2025-12-31 00:24:28 [INF] Request finished HTTP/1.1 POST http://localhost:5000/users - 201 null application/json; charset=utf-8 2302.4948ms

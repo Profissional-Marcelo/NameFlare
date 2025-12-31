@@ -1,4 +1,5 @@
-﻿using Login.Data;
+﻿using Login.Data.Context;
+using Login.Endpoints.User;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.OpenApi;
@@ -157,17 +158,24 @@ namespace Login.Common.Extensions
 
         public static WebApplication UseArchitectures(this WebApplication app)
         {
-            // SEMPRE mapear OpenAPI (não apenas em Development)
+            // SEMPRE mapear OpenAPI
             app.MapOpenApi();
 
+            // Mapeia endpoints MANUALMENTE
+            CreateUserEndpoint.Map(app); // ← Chamada direta!
+                                         // LoginEndpoint.Map(app);
+                                         // RegisterEndpoint.Map(app);
+                                         // ... outros endpoints
+
+            // Swagger UI
             if (app.Environment.IsDevelopment())
             {
                 app.UseSwaggerUI(options =>
                 {
                     options.SwaggerEndpoint("/openapi/v1.json", "API v1");
-                    options.DocumentTitle = "Minha API - Documentação";
+                    options.DocumentTitle = "Login API - Documentação";
                     options.RoutePrefix = "swagger";
-                    options.DefaultModelsExpandDepth(-1); // Esconde schemas
+                    options.DefaultModelsExpandDepth(-1);
                 });
 
                 app.MapGet("/", () => Results.Redirect("/swagger"));
